@@ -1,8 +1,11 @@
 /**
-  * vue-app-loader v0.0.5
+  * vue-app-loader v0.0.6
   * (c) 2017 Jimmy Fan
   * @license MIT
   */
+import Vue from 'vue';
+import _ from 'lodash';
+
 var index = {
   start: function (apps) {
     $(function () {

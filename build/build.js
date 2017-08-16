@@ -9,6 +9,7 @@ const buble = require('rollup-plugin-buble')
 const uglify = require('uglify-js')
 const zlib = require('zlib')
 const version = process.env.VERSION || require("../package.json").version
+const external = Object.keys(require("../package.json").dependencies || {});
 const banner =
 `/**
   * vue-app-loader v${version}
@@ -80,7 +81,8 @@ function genConfig (opts) {
         __VERSION__: version
       }),
       buble()
-    ]
+    ],
+    external
   }
 
   if (opts.env) {

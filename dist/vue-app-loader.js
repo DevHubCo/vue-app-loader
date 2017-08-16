@@ -1,13 +1,16 @@
 /**
-  * vue-app-loader v0.0.5
+  * vue-app-loader v0.0.6
   * (c) 2017 Jimmy Fan
   * @license MIT
   */
 (function (global, factory) {
-	typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
-	typeof define === 'function' && define.amd ? define(factory) :
-	(global.VueAppLoader = factory());
-}(this, (function () { 'use strict';
+	typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('vue'), require('lodash')) :
+	typeof define === 'function' && define.amd ? define(['vue', 'lodash'], factory) :
+	(global.VueAppLoader = factory(global.Vue,global._));
+}(this, (function (Vue,_) { 'use strict';
+
+Vue = Vue && 'default' in Vue ? Vue['default'] : Vue;
+_ = _ && 'default' in _ ? _['default'] : _;
 
 var index = {
   start: function (apps) {
