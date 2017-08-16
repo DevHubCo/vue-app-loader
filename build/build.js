@@ -67,9 +67,10 @@ function genConfig (opts) {
     dest: opts.dest,
     format: opts.format,
     banner,
-    moduleName: 'VueRouter',
+    moduleName: 'VueAppLoader',
     globals: {
-     vue: 'Vue'
+      vue: 'Vue',
+      lodash: '_'
     },
     plugins: [
       flow(),
