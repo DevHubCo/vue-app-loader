@@ -1,12 +1,12 @@
 /**
-  * vue-app-loader v0.0.6
+  * vue-app-loader v0.0.7
   * (c) 2017 Jimmy Fan
   * @license MIT
   */
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('vue'), require('lodash')) :
 	typeof define === 'function' && define.amd ? define(['vue', 'lodash'], factory) :
-	(global.VueAppLoader = factory(global.Vue,global._));
+	(global.VueAppLoader = factory(global.Vue,global.lodash));
 }(this, (function (Vue,_) { 'use strict';
 
 Vue = Vue && 'default' in Vue ? Vue['default'] : Vue;

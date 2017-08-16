@@ -1,5 +1,5 @@
 /**
-  * vue-app-loader v0.0.6
+  * vue-app-loader v0.0.7
   * (c) 2017 Jimmy Fan
   * @license MIT
   */

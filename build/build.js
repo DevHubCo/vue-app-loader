@@ -71,7 +71,7 @@ function genConfig (opts) {
     moduleName: 'VueAppLoader',
     globals: {
       vue: 'Vue',
-      lodash: '_'
+      lodash: 'lodash'
     },
     plugins: [
       flow(),
