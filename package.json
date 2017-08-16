@@ -1,6 +1,6 @@
 {
   "name": "vue-app-loader",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Vue.js Lib - Auto load apps from elements",
   "main": "dist/vue-app-loader.js",
   "module": "dist/vue-app-loader.esm.js",

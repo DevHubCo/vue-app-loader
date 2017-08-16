@@ -70,8 +70,8 @@ function genConfig (opts) {
     banner,
     moduleName: 'VueAppLoader',
     globals: {
-      vue: 'Vue',
-      lodash: 'lodash'
+      vue: 'vue',
+      lodash: '_'
     },
     plugins: [
       flow(),
