@@ -1,0 +1,29 @@
+{
+  "name": "vue-app-loader",
+  "version": "0.0.1",
+  "description": "Vue.js Lib - Auto load apps from elements",
+  "main": "dist/index.js",
+  "homepage": "https://github.com/DevHubCo/vue-app-loader",
+  "repository": "https://github.com/DevHubCo/vue-app-loader.git",
+  "author": "Jimmy Fan <jimmy@devhub.co>",
+  "license": "MIT",
+  "files": [
+    "dist/*.js"
+  ],
+  "scripts": {
+    "build": "node build/build.js"
+  },
+  "devDependencies": {
+    "rollup": "^0.43.0",
+    "rollup-plugin-buble": "^0.15.0",
+    "rollup-plugin-commonjs": "^8.1.0",
+    "rollup-plugin-flow-no-whitespace": "^1.0.0",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-plugin-replace": "^1.1.1",
+    "uglify-js": "^3.0.27"
+  },
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "vue": "^2.4.2"
+  }
+}
